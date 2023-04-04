@@ -1,15 +1,14 @@
 import "./kino-list.css"
 import KinoListItem from "../kino-list-item/kino-list-item"
 
-const KinoList = () => {
+const KinoList = ({data}) => {
   return (
-    <div className="kino-list">
-      KinoList:
-      <KinoListItem />
-      <KinoListItem />
-      <KinoListItem />
-      <KinoListItem />
-    </div>
+    <ul className="kino-list">
+      {data.map(item => (
+        <KinoListItem key={item.id} {...item} />
+        // <KinoListItem key={item.id} movieName={item.movieName} viewCount={item.viewCount} favourite={item.favourite} />
+      ))}
+    </ul>
   )
 }
 

@@ -1,10 +1,10 @@
 import "./kino-list-item.css"
 
-const KinoListItem = () => {
+const KinoListItem = ({movieName, viewCount, favourite}) => {
   return (
-    <div className='kino-list-item d-flex justify-content-between'>
-      <span className="list-group-item-label">Empire of Osman</span>
-      <input type="number" className="list-group-item-input" defaultValue='989' />
+    <li className={`kino-list-item d-flex justify-content-between ${favourite && 'favourite'}`}>
+      <span className="list-group-item-label">{movieName}</span>
+      <input type="number" className="list-group-item-input" defaultValue={viewCount} />
       <div>
         <button type="button" className="btn-cookie btn-sm">
           <i className="fas fa-cookie"></i>
@@ -14,7 +14,7 @@ const KinoListItem = () => {
         </button>
         <i className="fas fa-star"></i>
       </div>
-    </div>
+    </li>
   )
 }
 
