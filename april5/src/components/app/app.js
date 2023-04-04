@@ -28,7 +28,7 @@ const Calculator = () => {
 }
 
 const Qoshimcha = () => {
-    
+    // I will write class code here tomorrow
     return (
         <div className='border p-3 mt-5'>
             <span>Yoshingizni Kiriting:</span>
