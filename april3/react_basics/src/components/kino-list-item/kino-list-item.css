@@ -1,0 +1,65 @@
+.kino-list-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #3d5a80;
+}
+
+.kino-list-item:last-child{
+    border-bottom: none;
+}
+
+.kino-list-item span{
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 550px;
+}
+
+.kino-list-item input{
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+}
+
+.kino-list-item button{
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.kino-list-item .btn-cookie{
+    color: #e09f3e;
+}
+
+.kino-list-item .btn-trash{
+    color: #e5383b;
+}
+
+.kino-list-item .fa-star{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #ffd800;
+    transition: 0.3s all;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.kino-list-item.like .fa-star{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.kino-list-item.increase .kino-list-item.label,
+.kino-list-item.increase .kino-list-item.input{
+    color: #e09f3e;
+}
+
+.kino-list-item.increase .btn-start{
+    columns: #aeaeae;
+}
